@@ -3,10 +3,12 @@
 /* Controllers */
 
 
-function MyCtrl1() {}
-MyCtrl1.$inject = [];
+function MainCtrl($scope, $log, calculatorService) {
+	$scope.calcData = calculatorService.data;
+	$scope.monthlyTakeHome = calculatorService.monthlyTakeHome();
 
-
-function MyCtrl2() {
+	$scope.$watch('calcData', function ()
+	{
+		$scope.monthlyTakeHome = calculatorService.monthlyTakeHome();
+	}, true);
 }
-MyCtrl2.$inject = [];

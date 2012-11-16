@@ -1,7 +1,7 @@
 'use strict';
 
 /* jasmine specs for controllers go here */
-
+/*
 describe('MyCtrl1', function(){
   var myCtrl1;
 
@@ -29,3 +29,4 @@ describe('MyCtrl2', function(){
     //spec body
   });
 });
+*/
